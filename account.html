@@ -50,17 +50,8 @@
 
       .title {
         font-size: var(--lg);
-        margin-bottom: 12px;
-        text-align: center;
-      }
-
-      .subtitle {
-        color: var(--very-light-pink);
-        font-size: var(--md);
-        margin-top: 0;
-        font-weight: 300;
-        margin-bottom: 32px;
-        text-align: center;
+        margin-bottom: 35px;
+        text-align: left;
       }
 
       .form {
@@ -81,7 +72,7 @@
         height: 30px;
         font-size: var(--md);
         padding: 6px;
-        margin-bottom: 12px;
+        margin-bottom: 25px;
       }
 
       .primary-button {
@@ -102,8 +93,8 @@
       }
 
       @media (max-width: 640px) {
-        .logo {
-          display: block;
+        .input-password{
+            margin-bottom: 200px;
         }
       }
     </style>
@@ -113,15 +104,23 @@
       <div class="form-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
 
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for your account</p>
+        <h1 class="title">My account</h1>
+
         <form action="/" class="form">
-          <label for="password" class="label">Password</label>
+          <label for="password" class="label">Name</label>
           <input
-            type="password"
-            id="password"
-            placeholder="*********"
-            class="input input-password"
+            type="text"
+            id="name"
+            placeholder="Emiliano Velasquez"
+            class="input input-name"
+          />
+
+          <label for="password" class="label">Email address</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="emivelasquez2000@hotmail.com"
+            class="input input-name"
           />
 
           <label for="new-password" class="label">Password</label>
@@ -134,7 +133,7 @@
 
           <input
             type="submit"
-            value="Confirm"
+            value="Create"
             class="primary-button login-button"
           />
         </form>
