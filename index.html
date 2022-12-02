@@ -89,7 +89,7 @@
         </ul>
       </div>
     </nav>
-    <aside class="product-detail inactive">
+    <aside id = "shoppingCartContainer" class="inactive">
       <div class="title-container">
         <img src="./icons/flechita.svg" alt="arrow" />
         <p class="title">My order</p>
@@ -137,10 +137,32 @@
         <button class="primary-button">Checkout</button>
       </div>
     </aside>
-    <section class="main-container">
-      <div class="cards-container">
-        
+
+    <aside id = "productDetail" class="inactive">
+      <div class="product-detail-close">
+        <img src="./icons/icon_close.png" alt="close" />
       </div>
+      <img
+        src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.625/c_scale,w_400/ncom/en_US/switch/site-design-update/oled-model-promo"
+        alt="switch"
+      />
+      <div class="product-info">
+        <p>$35.00</p>
+        <p>Nintendo Switch</p>
+        <p>
+          La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas
+          (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN
+          para conexión por cable, almacenamiento interno de 64 GB y audio
+          mejorado.
+        </p>
+        <button class="primary-button add-to-car-button">
+          <img src="./icons/bt_add_to_cart.svg" />Add to car
+        </button>
+      </div>
+    </aside>
+
+    <section class="main-container">
+      <div class="cards-container"></div>
     </section>
     <script src="./main.js"></script>
   </body>

@@ -3,12 +3,12 @@ const desktopMenu = document.querySelector(".desktop-menu");
 const menuHamIcon = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuCarritoIcon = document.querySelector(".navbar-shopping-cart");
-const aside = document.querySelector(".product-detail");
+const shoppingCartContainer = document.querySelector("#shoppingCartContainer");
 const cardsContainer = document.querySelector(".cards-container");
 
 menuEmail.addEventListener("click", toggleDesktopMenu);
 menuHamIcon.addEventListener("click", toggleMobileMenu);
-menuCarritoIcon.addEventListener("click", toggleCarritoAside);
+menuCarritoIcon.addEventListener("click", toggleCarritoshoppingCartContainer);
 
 function toggleDesktopMenu() {
   desktopMenu.classList.toggle("inactive");
@@ -18,8 +18,8 @@ function toggleMobileMenu() {
   mobileMenu.classList.toggle("inactive");
 }
 
-function toggleCarritoAside() {
-  aside.classList.toggle("inactive");
+function toggleCarritoshoppingCartContainer() {
+  shoppingCartContainer.classList.toggle("inactive");
 }
 
 /*<div class="cards-container">
@@ -60,7 +60,8 @@ function renderProducts(producList) {
 
     const productName = document.createElement("p");
 
-    productName.innerText = productName;
+    productName.innerText =
+      "La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.";
 
     productCard.appendChild(productInfo);
 
